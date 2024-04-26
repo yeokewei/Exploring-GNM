@@ -1,0 +1,14 @@
+# linear and angular speed limits for the robot
+max_v: 0.5 #0.4 # m/s
+max_w: 0.5 #0.8 # rad/s
+
+# observation rate for the robot
+frame_rate: 10 # Hz
+# frame_rate: 20 # Hz
+graph_rate: 0.3333 # Hz  
+# graph_rate: 1 # Hz
+
+# topic names (modify for different robots/nodes)
+vel_teleop_topic: /cmd_vel 
+vel_navi_topic: /cmd_vel
+# vel_recovery_topic: /cmd_vel_mux/input/recovery

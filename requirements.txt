@@ -1,0 +1,111 @@
+appdirs==1.4.4
+argcomplete==3.2.2
+Brotli @ file:///home/conda/feedstock_root/build_artifacts/brotli-split_1695989787169/work
+catkin-pkg @ file:///home/conda/feedstock_root/build_artifacts/catkin_pkg_1694651879177/work
+certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1707022139797/work/certifi
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1698833585322/work
+click==8.1.7
+contourpy @ file:///home/conda/feedstock_root/build_artifacts/contourpy_1695554215751/work
+cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1696677705766/work
+defusedxml==0.7.1
+diffusers==0.11.1
+-e git+https://github.com/real-stanford/diffusion_policy.git@548a52bbb105518058e27bf34dcf90bf6f73681a#egg=diffusion_policy
+distro @ file:///home/conda/feedstock_root/build_artifacts/distro_1704321475663/work
+docker-pycreds==0.4.0
+docutils @ file:///home/conda/feedstock_root/build_artifacts/docutils_1701882611824/work
+efficientnet-pytorch==0.7.1
+einops==0.7.0
+exceptiongroup==1.2.0
+filelock @ file:///home/conda/feedstock_root/build_artifacts/filelock_1711394622191/work
+flake8==7.0.0
+flake8-blind-except==0.2.1
+flake8-builtins==2.2.0
+flake8-class-newline==1.6.0
+flake8-comprehensions==3.14.0
+flake8-deprecated==2.2.1
+flake8-docstrings==1.7.0
+flake8-import-order==0.18.2
+flake8-quotes==3.3.2
+fonttools @ file:///home/conda/feedstock_root/build_artifacts/fonttools_1710865489260/work
+fsspec==2024.3.1
+gitdb==4.0.11
+GitPython==3.1.43
+gmpy2 @ file:///home/conda/feedstock_root/build_artifacts/gmpy2_1666808683138/work
+huggingface-hub==0.22.2
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1701026962277/work
+importlib_metadata==7.1.0
+importlib_resources @ file:///home/conda/feedstock_root/build_artifacts/importlib_resources_1711040877059/work
+iniconfig==2.0.0
+Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1704966972576/work
+kiwisolver @ file:///home/conda/feedstock_root/build_artifacts/kiwisolver_1695379923772/work
+lz4==4.3.3
+MarkupSafe @ file:///home/conda/feedstock_root/build_artifacts/markupsafe_1706899923320/work
+matplotlib @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-suite_1695076686224/work
+mccabe==0.7.0
+mpmath @ file:///home/conda/feedstock_root/build_artifacts/mpmath_1678228039184/work
+munkres==1.1.4
+networkx @ file:///home/conda/feedstock_root/build_artifacts/networkx_1680692919326/work
+numpy==1.24.4
+nvidia-cublas-cu12==12.1.3.1
+nvidia-cuda-cupti-cu12==12.1.105
+nvidia-cuda-nvrtc-cu12==12.1.105
+nvidia-cuda-runtime-cu12==12.1.105
+nvidia-cudnn-cu12==8.9.2.26
+nvidia-cufft-cu12==11.0.2.54
+nvidia-curand-cu12==10.3.2.106
+nvidia-cusolver-cu12==11.4.5.107
+nvidia-cusparse-cu12==12.1.0.106
+nvidia-nccl-cu12==2.19.3
+nvidia-nvjitlink-cu12==12.4.127
+nvidia-nvtx-cu12==12.1.105
+opencv-python==4.9.0.80
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1710075952259/work
+Pillow @ file:///home/conda/feedstock_root/build_artifacts/pillow_1675487152289/work
+prettytable==3.10.0
+protobuf==4.25.3
+psutil==5.9.8
+pycodestyle==2.11.1
+pycryptodomex==3.20.0
+pydocstyle==6.3.0
+pyflakes==3.2.0
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1709721012883/work
+PyQt5==5.12.3
+PyQt5_sip==4.19.18
+PyQtChart==5.12
+PyQtWebEngine==5.12.1
+PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1661604839144/work
+pytest==7.4.4
+pytest-repeat==0.9.3
+pytest-rerunfailures==13.0
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
+python-gnupg==0.5.2
+PyYAML @ file:///home/conda/feedstock_root/build_artifacts/pyyaml_1695373436676/work
+regex==2023.12.25
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1684774241324/work
+rospkg @ file:///home/conda/feedstock_root/build_artifacts/rospkg_1679367642027/work
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+scipy==1.10.1
+sentry-sdk==1.45.0
+setproctitle==1.3.3
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+smmap==5.0.1
+snowballstemmer==2.2.0
+sympy @ file:///home/conda/feedstock_root/build_artifacts/sympy_1684180540116/work
+tomli==2.0.1
+torch==2.2.2
+torchaudio==2.2.2
+torchvision==0.17.2
+tornado @ file:///home/conda/feedstock_root/build_artifacts/tornado_1708363076094/work
+tqdm==4.66.2
+triton==2.2.0
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1708904622550/work
+unicodedata2 @ file:///home/conda/feedstock_root/build_artifacts/unicodedata2_1695847997538/work
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1708239446578/work
+-e git+https://github.com/yeokewei/visualnav-transformer.git@5b4c8165d10f0c9246e25cb530a026f8924e61cd#egg=vint_train&subdirectory=train
+vit-pytorch==1.6.5
+wandb==0.16.6
+warmup_scheduler==0.3
+wcwidth==0.2.13
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1695255097490/work
+zstandard==0.22.0

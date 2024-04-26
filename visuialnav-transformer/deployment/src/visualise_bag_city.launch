@@ -1,0 +1,19 @@
+<launch>
+    <!-- Play the main car bag -->
+    <node name="goal_bag_play" pkg="rosbag" type="play" args="/home/kawaii/Documents/GitHub/visualnav-transformer/deployment/topomaps/bags/city.bag /odom:=goal_odom"/>
+    <!-- Play the other car bags -->
+    <node name="attempt_1_bag_play" pkg="rosbag" type="play" args="/home/kawaii/Documents/GitHub/visualnav-transformer/deployment/nav_rosbag/city_1.bag /odom:=/attempt_1_odom"/>
+
+    <node name="attempt_2_bag_play" pkg="rosbag" type="play" args="/home/kawaii/Documents/GitHub/visualnav-transformer/deployment/nav_rosbag/city_2.bag /odom:=/attempt_2_odom"/>
+    
+    <node name="attempt_3_bag_play" pkg="rosbag" type="play" args="/home/kawaii/Documents/GitHub/visualnav-transformer/deployment/nav_rosbag/city_3.bag /odom:=/attempt_3_odom"/>
+    
+    <node name="attempt_4_bag_play" pkg="rosbag" type="play" args="/home/kawaii/Documents/GitHub/visualnav-transformer/deployment/nav_rosbag/city_4.bag /odom:=/attempt_4_odom"/>
+
+    <node name="attempt_5_bag_play" pkg="rosbag" type="play" args="/home/kawaii/Documents/GitHub/visualnav-transformer/deployment/nav_rosbag/city_5.bag /odom:=/attempt_5_odom"/>    
+    <!-- Repeat for each additional car bag -->
+
+    <!-- Launch RViz with a pre-configured .rviz file -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d /home/kawaii/Documents/GitHub/visualnav-transformer/deployment/src/rviz/visualisebag_city.rviz" />
+
+</launch>

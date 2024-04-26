@@ -149,4 +149,4 @@ dmypy.json
 .pyre/
 
 # ros
-.bag
+*.bag

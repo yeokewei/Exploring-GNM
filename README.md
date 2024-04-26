@@ -1,7 +1,5 @@
 # Mobile Robotics Individual Project Spring 2024
-## Exploring Generalized Robotics Navigation: Novel
-Environment Navigation and Robot Adaptability
-Assessment
+## Exploring Generalized Robotics Navigation: Novel Environment Navigation and Robot Adaptability Assessment
 
 **Project Contributor**: Yeo Ke Wei 1005165
 
@@ -10,6 +8,7 @@ _SUTD, Design and Artificial Intelligence (DAI)_
 [**Reference Code Contributors**](https://general-navigation-models.github.io): Dhruv Shah, Ajay Sridhar, Nitish Dashora, Catherine Glossop, Kyle Stachowicz, Arjun Bhorkar, Kevin Black, Noriaki Hirose, Sergey Levine
 
 _Berkeley AI Research_
+
 ---
 
 General Navigation Models are general-purpose goal-conditioned visual navigation policies trained on diverse, cross-embodiment training data, and can control many different robots in zero-shot. They can also be efficiently fine-tuned, or adapted, to new robots and downstream tasks. Our family of models is described in the following research papers (and growing):

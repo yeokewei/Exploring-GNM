@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sends URDF to param server and spawns robot in Gazebo world -->
+<!-- Requires: Gazebo simulation running -->
+
+<launch>
+
+<!-- Configure the Gazebo differential drive controller plugin -->
+<!-- or set args from CLI, e.g. roslaunch rtab_dumpster spawn_rtab_dumpster.launch diff_drive_publishTf:=false diff_drive_publishOdomTF:=false -->
+    <arg name="odometryTopic" default="odom" />
+    <arg name="odometryFrame" default="odom" />
+    <arg name="robotBaseFrame" default="robot_footprint" />
+    <arg name="diff_drive_publishTf" default="true" />
+    <arg name="diff_drive_publishOdomTF" default="true" />
+
+<!-- Send URDF to parameter server -->
+<param name="robot_description" command="$(find xacro)/xacro --inorder '$(find rtab_dumpster)/urdf/rtab_dumpster.xacro'
+                                         odometryTopic:=$(arg odometryTopic)
+                                         odometryFrame:=$(arg odometryFrame)
+                                         robotBaseFrame:=$(arg robotBaseFrame)
+                                         diff_drive_publishTf:=$(arg diff_drive_publishTf)
+                                         diff_drive_publishOdomTF:=$(arg diff_drive_publishOdomTF)" />
+
+<!-- Send joint values from simulation -->
+<!-- This package reads the robot_description parameter, finds all of the non-fixed joints -->
+<!-- and publishes a JointState message with all those joints defined. -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="use_gui" value="false"/>
+  </node>
+
+<!-- Publish tf values -->
+<!-- Send robot states to tf based on URDF specified by the parameter robot_description -->
+<!-- and the joint positions from the topic > joint_states  -->
+<!-- This node publishes a single message with the state of all joints of the robot combined-->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen"/>
+  
+<!-- Spawn robot in Gazebo -->
+	<arg name= "pos_x" default = "0"/>
+	<arg name= "pos_y" default = "0"/>
+	<arg name= "pos_z" default = "0.16"/>
+	<arg name= "yaw" default = "0"/>
+	<arg name= "robot_name" default= "rtab_dumpster"/>
+
+	<node name="urdf_robot_model_spawner" pkg="gazebo_ros" type="spawn_model"
+	args="-param robot_description
+	-urdf
+	-x $(arg pos_x)
+	-y $(arg pos_y)
+	-z $(arg pos_z)
+	-Y $(arg yaw)
+	-model $(arg robot_name)"
+	respawn="false" output="screen"/>
+
+</launch>
